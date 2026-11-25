@@ -192,4 +192,5 @@ setup();par();
 function sweep(){var vh=window.innerHeight;d.querySelectorAll('.rv:not(.in)').forEach(function(el){var r=el.getBoundingClientRect();if(r.height>0&&r.top<vh*0.92)el.classList.add('in')})}
 var sw=false;window.addEventListener('scroll',function(){if(!sw){sw=true;requestAnimationFrame(function(){sw=false;sweep()})}},{passive:true});
 window.addEventListener('hashchange',function(){setTimeout(sweep,120)});window.addEventListener('load',sweep);setTimeout(sweep,400);
-})()</script></body></html>
+})()</script><script data-goatcounter="https://hanymagdy.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body></html>
