@@ -1,6 +1,7 @@
 {
  "_help": "HOW TO EDIT: change the text after the colon on any line, keep the quotes and the comma. 'en' is English, 'ar' is Arabic. The key on the left says what the line is (see _notes). Then press Commit changes on GitHub. Do not rename keys.",
  "en": {
+   "available_badge": "Available for new projects",
   "home": "Home",
   "about": "About",
   "work": "Work",
@@ -190,6 +191,7 @@
   "cap_102": "Painting the Virgin icon at the desk"
  },
  "ar": {
+   "available_badge": "متاح لمشاريع جديدة",
   "home": "الرئيسية",
   "about": "نبذة عني",
   "work": "أعمالي",
@@ -379,6 +381,7 @@
   "cap_102": "رسم أيقونة العذراء على المكتب"
  },
  "_notes": {
+   "available_badge": "badge: home hero + contact page",
   "home": "nav bar (all pages)",
   "about": "nav bar (all pages)",
   "work": "nav bar (all pages)",
