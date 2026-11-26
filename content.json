@@ -83,7 +83,8 @@
     "whatsapp": "WhatsApp",
     "phone": "Phone",
     "hany_magdy_cairo": "© 2026 Hany Magdy",
-    "wa_label": "Request work"
+    "wa_label": "Request work",
+    "privacy_policy": "Privacy policy"
   },
   "ar": {
     "home": "الرئيسية",
@@ -168,7 +169,8 @@
     "whatsapp": "واتساب",
     "phone": "الهاتف",
     "hany_magdy_cairo": "© 2026 هاني مجدي",
-    "wa_label": "اطلب عملاً"
+    "wa_label": "اطلب عملاً",
+    "privacy_policy": "سياسة الخصوصية"
   },
   "_notes": {
     "home": "nav bar (all pages)",
