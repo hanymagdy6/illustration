@@ -1,7 +1,7 @@
 @font-face{font-family:Anton;src:url(../fonts/Anton.ttf) format("truetype")}
 @font-face{font-family:Poppins;src:url(../fonts/Poppins.ttf) format("truetype")}
 *{box-sizing:border-box}
-body{margin:0;background:#1b3d5a url(../images/pattern-cross.svg) 0 0/64px 64px repeat;color:#fff;font-family:Poppins,"Helvetica Neue",Arial,system-ui,sans-serif;line-height:1.7}
+body{margin:0;background:#1b3d5a;color:#fff;font-family:Poppins,"Helvetica Neue",Arial,system-ui,sans-serif;line-height:1.7}
 html[dir=ltr] body{text-align:left}html[dir=rtl] body{text-align:right}
 .top{display:flex;justify-content:space-between;align-items:center;padding:16px 24px;border-bottom:2px solid #f79a2d}
 .top a{color:#fff;text-decoration:none;font-size:14px}
@@ -40,3 +40,11 @@ figcaption b{color:#f79a2d;font-family:Anton,Impact,sans-serif;font-weight:400;f
 .lb .lbx{top:14px;right:14px}.lb .lbp{left:12px;top:50%;transform:translateY(-50%)}.lb .lbn{right:12px;top:50%;transform:translateY(-50%)}
 .lb button:hover{background:#f79a2d;color:#080808}
 @media(max-width:480px){.lb .lbp,.lb .lbn{top:auto;bottom:16px;transform:none}}
+
+
+/* background: the Iconographer logo tiled very faintly */
+body{position:relative}
+body::before{content:"";position:absolute;inset:0;z-index:0;pointer-events:none;background:#8fb3d4;opacity:.1;
+-webkit-mask:url(../images/nav-logo.svg) 0 0/56px auto space;mask:url(../images/nav-logo.svg) 0 0/56px auto space}
+.top,main{position:relative;z-index:1}
+body.pat2::before{-webkit-mask-size:96px auto;mask-size:96px auto;opacity:.07}
