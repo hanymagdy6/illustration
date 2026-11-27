@@ -606,6 +606,7 @@
 (function () {
   (function () {
     function f() {
+      if (document.hidden) return;
       var s = document.querySelector(".v-home .scl");
       if (!s) return;
       var a = document.querySelector(".v-home .avail"),

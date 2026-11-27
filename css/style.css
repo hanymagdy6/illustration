@@ -983,11 +983,7 @@ footer[id] {
   flex-direction: row !important;
   gap: 0 !important;
 }
-.nav .l a,
-.nav .l .ddt {
-  color: #e8e2d5 !important;
-}
-.nav .r {
+.nav .l a, .nav .l .ddt, .nav .r {
   color: #e8e2d5 !important;
 }
 .nav .mono {
@@ -1386,11 +1382,7 @@ html[lang="ar"] .ddp a {
   letter-spacing: 0 !important;
   text-align: center;
 }
-.v-process .pagehead {
-  background: transparent !important;
-}
-.v-process .pr,
-.v-process .band {
+.v-process .pagehead, .v-process .pr, .v-process .band {
   background: transparent !important;
 }
 .v-process figcaption {
@@ -1435,11 +1427,7 @@ html[lang="ar"] .ddp a {
   object-fit: contain !important;
   display: block;
 }
-img:not(.nav img):not(.langbtn img):not([src$=".svg"]),
-.card {
-  border-radius: 5px;
-}
-.card img {
+img:not(.nav img):not(.langbtn img):not([src$=".svg"]), .card, .card img {
   border-radius: 5px;
 }
 .grid,
@@ -1870,20 +1858,10 @@ html[lang="ar"] h3,
 html[lang="ar"] h4 {
   line-height: 1.45;
 }
-html[lang="ar"] .hero h1,
-html[lang="ar"] .band h2,
-html[lang="ar"] .foot h2,
-html[lang="ar"] .banner h2,
-html[lang="ar"] .pagehead h1 {
+html[lang="ar"] .hero h1, html[lang="ar"] .band h2, html[lang="ar"] .foot h2, html[lang="ar"] .banner h2, html[lang="ar"] .pagehead h1, html[lang="ar"] .facts b {
   line-height: 1.3 !important;
 }
-html[lang="ar"] .facts b {
-  line-height: 1.3 !important;
-}
-html[lang="ar"] .facts > div > span {
-  line-height: 1.6;
-}
-html[lang="ar"] .nav .l .ddp a {
+html[lang="ar"] .facts > div > span, html[lang="ar"] .nav .l .ddp a {
   line-height: 1.6;
 }
 html[lang="ar"] h2 + p,
@@ -2178,10 +2156,7 @@ html[lang="ar"] .v-about .about h3 {
 .mqrow {
   display: block;
 }
-.mqar {
-  display: none;
-}
-html[dir="rtl"] .mqen {
+.mqar, html[dir="rtl"] .mqen {
   display: none;
 }
 html[dir="rtl"] .mqar {
