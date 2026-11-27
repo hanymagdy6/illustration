@@ -44,7 +44,7 @@ figcaption b{color:#f79a2d;font-family:Anton,Impact,sans-serif;font-weight:400;f
 
 /* background: the finished mural, scrolls with the page, mirrored tile so it repeats without a seam, 20% opacity */
 body{position:relative}
-body::before{content:"";position:absolute;inset:0;z-index:0;pointer-events:none;background:url(../images/mural-bg-tile.jpg) center top/100% auto repeat-y;opacity:.2}
+body::before{content:"";position:absolute;inset:0;z-index:0;pointer-events:none;background:url(../images/nav-logo.png) center 140px/min(80vw,640px) auto no-repeat;opacity:.1}
 .top,main{position:relative;z-index:1}
 h2,p,dt,dd,figcaption,.kick,h1{text-shadow:0 1px 8px rgba(8,20,32,.85)}
 .facts dt{opacity:.95}
