@@ -68,3 +68,6 @@ body::before{animation:none;opacity:.1;transform:none;will-change:auto}
 .stages img,.details img{transition:none}
 .stages img:hover,.details img:hover{transform:none}
 .fin figure{will-change:auto;transform:none!important}}
+/* hero mural: a bit larger, rounded like the gallery cards, never cropped */
+.hero .big{max-height:none;width:min(100%,720px);height:auto;border-radius:10px}
+@media(max-width:600px){.hero{padding-left:10px;padding-right:10px}.hero .big{width:100%}}
