@@ -76,4 +76,6 @@ if(fin&&innerWidth>=900){var r=fin.getBoundingClientRect(),p=(r.top+r.height/2-v
 addEventListener('scroll',function(){if(!tick){tick=true;requestAnimationFrame(upd)}},{passive:true});
 addEventListener('resize',function(){requestAnimationFrame(upd)});upd();
 })();
+</script><script>
+(function(){var n=document.querySelector(".top");if(!n)return;var t;addEventListener("scroll",function(){n.classList.add("navhide");clearTimeout(t);t=setTimeout(function(){n.classList.remove("navhide")},250)},{passive:true})})();
 </script></body></html>
