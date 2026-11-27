@@ -79,7 +79,7 @@ window.SITE_CONTENT = {
     cs_view: "View the case study",
     ws_kick: "Work in stages",
     ws_title: "From the first lines to the finished work",
-    ws_blurb: "Portraits and icons, step by step.",
+    ws_blurb: "Icons and portraits, step by step.",
     ws_view: "See the stages",
     the_pantocrator_from_blank: "The Pantocrator, from blank wall to finished mural",
     egg_tempera_acrylic_and:
@@ -287,7 +287,7 @@ window.SITE_CONTENT = {
     cs_view: "شاهد دراسة الحالة",
     ws_kick: "مراحل الشغل",
     ws_title: "من الخطوط الأولى للشغل النهائي",
-    ws_blurb: "بورتريهات وأيقونات، خطوة خطوة.",
+    ws_blurb: "أيقونات وبورتريهات، خطوة خطوة.",
     ws_view: "شاهد المراحل",
     the_pantocrator_from_blank: "ضابط الكل، من الحائط الفارغ إلى الجدارية المكتملة",
     egg_tempera_acrylic_and:

@@ -2746,6 +2746,10 @@ html[dir="rtl"] .cst {
     grid-template-columns: 1fr;
     gap: 20px;
   }
+  .v-process > .cs .cst {
+    padding-left: 22px;
+    padding-right: 22px;
+  }
 }
 .card a {
   display: block;
@@ -2787,4 +2791,28 @@ html[dir="rtl"] .cst {
     font-size: 12px;
     padding: 11px 18px;
   }
+}
+
+/* button rows: keep a clear gap so pulse rings never touch */
+section.more {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 26px 18px;
+}
+
+/* larger tap area for the language button, same look */
+.langbtn {
+  position: relative;
+}
+.langbtn::after {
+  content: "";
+  position: absolute;
+  inset: -8px -6px;
+}
+.card .fcb {
+  min-height: 36px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }

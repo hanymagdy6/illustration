@@ -24,7 +24,7 @@ One page that shows the work first: icons, murals, studies and prints, grouped b
 index.html        page markup (all views, hash-routed: #about, #work, #process, #contact)
 privacy.html      privacy page
 pantocrator/     case study page for the apse mural
-work-stages/    step by step page for portraits and icons
+work-stages/    step by step page for icons and portraits
 css/style.css     all styles, with a comment above each section
 js/content.js     the site text in English and Arabic (edit text here)
 js/main.js        behavior: language switch, routing, animations
