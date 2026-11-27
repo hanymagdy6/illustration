@@ -407,10 +407,6 @@ body {
 }
 @media (min-width: 800px) {
 }
-.hero {
-  align-items: flex-end;
-  padding-bottom: 44px;
-}
 .hero h1 {
   font-size: 15vw;
 }
@@ -420,6 +416,9 @@ body {
 @media (min-width: 800px) {
 }
 .hero {
+align-items: flex-end;
+  padding-bottom: 44px;
+
   background-image: url(../images/hero-pant.jpg) !important;
   background-position: center top !important;
   background-size: cover;
@@ -516,6 +515,8 @@ body {
 }
 main.pgv {
   display: none;
+
+animation: pgin 0.65s cubic-bezier(0.2, 0.7, 0.2, 1);
 }
 [data-view="home"] .v-home,
 [data-view="about"] .v-about,
@@ -739,9 +740,6 @@ main.pgv {
     transform: none;
   }
 }
-main.pgv {
-  animation: pgin 0.65s cubic-bezier(0.2, 0.7, 0.2, 1);
-}
 .hero h1 {
   animation: rise 1.1s cubic-bezier(0.2, 0.7, 0.2, 1) both;
 }
@@ -943,15 +941,6 @@ main.pgv {
 .sicon svg path {
   fill: currentColor;
 }
-.nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
-  z-index: 60;
-  transition: transform 0.3s ease;
-}
 .nav.navhide {
   transform: translateY(-110%);
 }
@@ -974,6 +963,14 @@ footer[id] {
 /* base */
 /* reference-style nav: dark bar, links left, small logo right, work dropdown */
 .nav {
+position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 60;
+  transition: transform 0.3s ease;
+
   background: #123553 !important;
   border-bottom: 2px solid #f79a2d !important;
   height: 60px !important;
@@ -1112,6 +1109,10 @@ footer[id] {
   white-space: nowrap;
   min-width: 0;
   flex: 0 1 auto;
+
+order: 1 !important;
+  align-self: stretch !important;
+  align-items: stretch !important;
 }
 .nav .l a,
 .nav .l .ddt {
@@ -1124,35 +1125,27 @@ footer[id] {
   white-space: nowrap;
   font-size: clamp(10px, 1.25vw, 13px) !important;
   justify-self: auto !important;
+
+order: 2 !important;
 }
 .nav .mono {
   margin: 0 !important;
   flex: 0 0 auto;
   display: block !important;
+
+order: 3 !important;
+  margin-left: 0 !important;
 }
 .nav .mono img {
   width: auto !important;
   max-width: none;
+
+height: clamp(32px, 4.2vw, 48px) !important;
 }
 @media (max-width: 799px) {
   .nav .r {
     display: none !important;
   }
-}
-.nav .l {
-  order: 1 !important;
-  align-self: stretch !important;
-  align-items: stretch !important;
-}
-.nav .r {
-  order: 2 !important;
-}
-.nav .mono {
-  order: 3 !important;
-  margin-left: 0 !important;
-}
-.nav .mono img {
-  height: clamp(32px, 4.2vw, 48px) !important;
 }
 .nav .l a,
 .nav .l .ddt {
@@ -1178,10 +1171,6 @@ footer[id] {
   padding: 0 0 9px !important;
   line-height: 1.2;
   white-space: normal;
-}
-.nav .l .ddp a:after {
-  bottom: -1px !important;
-  height: 2px;
 }
 .ddp {
   left: clamp(10px, 2.5vw, 40px) !important;
@@ -1211,6 +1200,9 @@ footer[id] {
   transform: scaleX(1) !important;
 }
 .nav .l .ddp a:after {
+bottom: -1px !important;
+  height: 2px;
+
   transform: scaleX(0) !important;
 }
 .nav .l .ddp a:hover:after {
@@ -1567,6 +1559,8 @@ img:not(.nav img):not(.langbtn img):not([src$=".svg"]), .card, .card img {
 .v-process {
   position: relative;
   isolation: isolate;
+
+overflow: hidden;
 }
 .v-process {
   background-color: #123553 !important;
@@ -1592,12 +1586,6 @@ img:not(.nav img):not(.langbtn img):not([src$=".svg"]), .card, .card img {
   -webkit-mask-size: contain;
   mask-size: contain;
 }
-.pagehead,
-.foot,
-.band.k,
-.v-process {
-  overflow: hidden;
-}
 /* hmark */
 .hero .hmark {
   display: block;
@@ -1606,9 +1594,6 @@ img:not(.nav img):not(.langbtn img):not([src$=".svg"]), .card, .card img {
 @media (min-width: 800px) {
 }
 /* hgrad */
-.hero {
-  isolation: isolate;
-}
 .hero:after {
   content: "";
   position: absolute;
@@ -1645,7 +1630,9 @@ img:not(.nav img):not(.langbtn img):not([src$=".svg"]), .card, .card img {
 @media (min-width: 800px) {
   .hero {
     background-image: none !important;
-  }
+  
+--pw: min(calc(0.8 * (min(92vh, 820px) - 104px)), 44vw);
+}
   .hero > div {
     width: calc(92vw - 0.75 * (min(92vh, 820px) - 44px) - 7vw - 24px);
     text-align: center;
@@ -1691,9 +1678,6 @@ img:not(.nav img):not(.langbtn img):not([src$=".svg"]), .card, .card img {
 }
 /* hpanel */
 @media (min-width: 800px) {
-  .hero {
-    --pw: min(calc(0.8 * (min(92vh, 820px) - 104px)), 44vw);
-  }
   .hero:before,
   .hero:after {
     display: none !important;
@@ -1887,6 +1871,8 @@ html[lang="ar"] p + p {
 }
 /* ihero */
 .hero {
+isolation: isolate;
+
   display: block !important;
   overflow: hidden;
   padding: 0 !important;
@@ -2239,6 +2225,8 @@ html[dir="rtl"] .mqar {
   right: 0;
   z-index: 2;
   pointer-events: none;
+
+padding: 0 !important;
 }
 @keyframes sp {
   0%,
@@ -2536,9 +2524,6 @@ html[dir="rtl"] .nav .mono img {
     transform: translateX(-5px);
   }
 }
-.scl {
-  padding: 0 !important;
-}
 @media (prefers-reduced-motion: reduce) {
   .scl b,
   .pa {
@@ -2602,6 +2587,10 @@ section.banner {
   background-repeat: no-repeat;
   background-color: #0f2638;
   aspect-ratio: auto !important;
+
+background-size: cover !important;
+  background-position: center !important;
+  min-height: min(86vh, 820px) !important;
 }
 @media (max-width: 700px) {
 }
@@ -2684,11 +2673,6 @@ section.banner {
 .nav .l a:hover,
 .nav .r:hover {
   color: #f79a2d !important;
-}
-section.banner {
-  background-size: cover !important;
-  background-position: center !important;
-  min-height: min(86vh, 820px) !important;
 }
 @media (max-width: 700px) {
   section.banner {
