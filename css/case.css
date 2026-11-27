@@ -44,7 +44,27 @@ figcaption b{color:#f79a2d;font-family:Anton,Impact,sans-serif;font-weight:400;f
 
 /* background: the finished mural, scrolls with the page, mirrored tile so it repeats without a seam, 20% opacity */
 body{position:relative}
-body::before{content:"";position:absolute;inset:0;z-index:0;pointer-events:none;background:url(../images/nav-logo.png) center 70px/min(96vw,920px) auto no-repeat;opacity:.1}
+body::before{content:"";position:absolute;top:0;left:0;right:0;height:1500px;z-index:0;will-change:transform;transform:translate3d(0,var(--py,0px),0);animation:embin 2.4s ease-out both;pointer-events:none;background:url(../images/nav-logo.png) center 70px/min(96vw,920px) auto no-repeat;opacity:.1}
 .top,main{position:relative;z-index:1}
 h2,p,dt,dd,figcaption,.kick,h1{text-shadow:0 1px 8px rgba(8,20,32,.85)}
 .facts dt{opacity:.95}
+
+/* motion: slow, ambient, no layout shift (transform and opacity only) */
+@keyframes embin{from{opacity:0}to{opacity:.1}}
+@keyframes heroin{from{opacity:0;transform:translateY(26px)}to{opacity:1;transform:none}}
+@keyframes txtin{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+.hero .big{animation:heroin 1.1s cubic-bezier(.22,.61,.36,1) both;box-shadow:0 20px 60px rgba(0,0,0,.4),0 0 0 1px rgba(247,154,45,.4),0 0 48px rgba(247,154,45,.14)}
+.hero .kick{animation:txtin .9s ease-out .5s both}
+.hero h1{animation:txtin 1s ease-out .65s both}
+.rv{opacity:0;transform:translateY(22px);transition:opacity .9s ease-out,transform .9s cubic-bezier(.22,.61,.36,1)}
+.rv.in{opacity:1;transform:none}
+.stages img,.details img{clip-path:inset(0 round 10px);transition:transform .7s cubic-bezier(.22,.61,.36,1)}
+@media(hover:hover){.stages img:hover,.details img:hover{transform:scale(1.03)}}
+.fin figure{will-change:transform}
+@media(prefers-reduced-motion:reduce){
+body::before{animation:none;opacity:.1;transform:none;will-change:auto}
+.hero .big,.hero .kick,.hero h1{animation:none}
+.rv{opacity:1;transform:none;transition:none}
+.stages img,.details img{transition:none}
+.stages img:hover,.details img:hover{transform:none}
+.fin figure{will-change:auto;transform:none!important}}
