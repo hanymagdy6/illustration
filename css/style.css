@@ -2816,3 +2816,8 @@ section.more {
   align-items: center;
   justify-content: center;
 }
+
+/* captions on the dark Mural band must be light */
+.band.k .mproc figcaption {
+  color: #f5f1e8;
+}
