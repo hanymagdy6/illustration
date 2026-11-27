@@ -356,9 +356,8 @@ html[lang=ar] .v-about .about h3{line-height:1.5}
 html[dir=rtl] #sbar{transform-origin:right}
 .hl{display:block;height:4px;width:0;background:#f79a2d;border-radius:2px;transition:width .8s cubic-bezier(.2,.7,.2,1) .25s}
 .hl.on{width:64px}
-.pill::before{content:"";position:absolute;top:0;bottom:0;left:0;width:34%;background:rgba(255,255,255,.4);transform:translateX(-170%) skewX(-20deg);pointer-events:none;z-index:1}
-.pill:hover{clip-path:inset(0 round 999px)}
-.pill:hover::before{transition:transform .75s ease;transform:translateX(430%) skewX(-20deg)}
+.pill::before{content:"";position:absolute;inset:0;border-radius:inherit;background:rgba(255,255,255,.4);clip-path:polygon(-50% 0,-25% 0,-35% 100%,-60% 100%);pointer-events:none;z-index:1}
+.pill:hover::before{transition:clip-path .75s ease;clip-path:polygon(125% 0,150% 0,140% 100%,115% 100%)}
 .pill:hover::after{animation:none;opacity:0}
 .cr{opacity:0;translate:0 26px;transition:opacity .9s cubic-bezier(.2,.7,.2,1) var(--d,0ms),translate .9s cubic-bezier(.2,.7,.2,1) var(--d,0ms)}
 .cr.in{opacity:1;translate:0 0}
