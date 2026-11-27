@@ -44,7 +44,6 @@ document.querySelectorAll('[data-st]').forEach(function(e){e.textContent=t.stage
 document.querySelectorAll('[data-d]').forEach(function(e){e.textContent=t.dcap[e.dataset.d]});
 document.getElementById('lang').textContent=lang==='ar'?'EN':'AR'}
 document.getElementById('lang').onclick=function(){lang=lang==='ar'?'en':'ar';localStorage.setItem('lang',lang);apply()};
-if(/[?&]pattern=2/.test(location.search))document.body.classList.add('pat2');
 apply();
 
 (function(){
