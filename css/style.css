@@ -3086,3 +3086,41 @@ html[dir="rtl"] .cst {
 .card a {
   display: block;
 }
+
+/* featured cards: clickable with a button */
+.card .fc {
+  position: relative;
+  display: block;
+  height: 100%;
+}
+.card .fc::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 40%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
+  pointer-events: none;
+}
+.card .fcb {
+  position: absolute;
+  left: 50%;
+  bottom: 18px;
+  transform: translateX(-50%);
+  z-index: 1;
+  width: max-content;
+  max-width: calc(100% - 12px);
+  white-space: normal;
+  text-align: center;
+  line-height: 1.25;
+  font-size: 10px;
+  letter-spacing: 0.06em;
+  padding: 9px 12px;
+}
+@media (min-width: 800px) {
+  .card .fcb {
+    font-size: 12px;
+    padding: 11px 18px;
+  }
+}
