@@ -201,6 +201,11 @@ window.SITE_CONTENT = {
     cap_100: "Charcoal portrait with the clocks, at the easel",
     cap_101: "Pencil portrait in progress",
     cap_102: "Painting the Virgin icon at the desk",
+    cap_103: "The Annunciation angel, checking the proportions with a compass",
+    cap_104: "The Annunciation angel, the full orange underdrawing on canvas",
+    cap_105: "The Annunciation angel, painting the dark brown hair",
+    cap_106: "The Annunciation angel, colour blocking started",
+    cap_107: "The finished Pantocrator, close up",
   },
   ar: {
     available_badge: "متاح لمشاريع جديدة",
@@ -398,6 +403,11 @@ window.SITE_CONTENT = {
     cap_100: "بورتريه بالفحم مع الساعات، عند الحامل",
     cap_101: "بورتريه بالرصاص قيد الإنجاز",
     cap_102: "رسم أيقونة العذراء على المكتب",
+    cap_103: "ملاك البشارة للعذراء مريم، قياس النسب بالفرجار",
+    cap_104: "ملاك البشارة للعذراء مريم، الرسم التحضيري البرتقالي كاملاً على القماش",
+    cap_105: "ملاك البشارة للعذراء مريم، رسم الشعر باللون البني الغامق",
+    cap_106: "ملاك البشارة للعذراء مريم، بدء تأسيس الألوان",
+    cap_107: "المسيح ضابط الكل بعد الانتهاء، تفصيل عن قرب",
   },
   _notes: {
     available_badge: "badge: home hero + contact page",
@@ -480,7 +490,7 @@ window.SITE_CONTENT = {
     phone: "page: contact",
     hany_magdy_cairo: "page: contact",
     wa_label: "floating WhatsApp button label",
-    "cap_001...cap_102": "Captions under the Work and Process photos, in page order",
+    "cap_001...cap_107": "Captions under the Work and Process photos, in page order",
   },
   whatsapp: {
     _note:
