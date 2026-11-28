@@ -420,6 +420,7 @@ align-items: flex-end;
   padding-bottom: 44px;
 
   background-image: url(../images/hero-pant.jpg) !important;
+  background-color: #1b3d5a;
   background-position: center top !important;
   background-size: cover;
 }
