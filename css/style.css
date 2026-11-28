@@ -1951,6 +1951,9 @@ html[lang="ar"] .hero h1 {
   text-align: right !important;
 }
 @media (max-width: 800px) {
+  .hero {
+    background-color: #1b3d5a !important;
+  }
   .hero > div.hbigw,
   html[lang="ar"] .hero > div.hbigw {
     width: 100% !important;
