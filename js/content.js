@@ -82,6 +82,7 @@ window.SITE_CONTENT = {
     ws_blurb: "Icons and portraits, step by step.",
     ws_view: "See the stages",
     the_pantocrator_from_blank: "The Pantocrator, from blank wall to finished mural",
+    other_murals: "Other murals",
     egg_tempera_acrylic_and:
       "Egg tempera, acrylic and gold leaf on wooden panels. Each piece reflects the beauty of the eternal divine presence and the comfort of praying creation.",
     inspired_by_the_ancient:
@@ -290,6 +291,7 @@ window.SITE_CONTENT = {
     ws_blurb: "أيقونات وبورتريهات، خطوة خطوة.",
     ws_view: "شاهد المراحل",
     the_pantocrator_from_blank: "ضابط الكل، من الحائط الفارغ إلى الجدارية المكتملة",
+    other_murals: "جداريات أخرى",
     egg_tempera_acrylic_and:
       "تمبرا البيض والأكريليك وورق الذهب على ألواح خشبية. كل عمل يعكس جمال الحضور الإلهي الأزلي وسكينة الخليقة المصلّية.",
     inspired_by_the_ancient:
@@ -488,6 +490,7 @@ window.SITE_CONTENT = {
     oil_portrait: "page: work",
     signed_hany_magdy_iconographer: "page: work",
     the_pantocrator_from_blank: "page: work",
+    other_murals: "page: work",
     egg_tempera_acrylic_and: "page: work",
     inspired_by_the_ancient: "page: work",
     italian_and_classical_studies: "page: work",
